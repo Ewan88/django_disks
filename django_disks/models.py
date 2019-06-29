@@ -121,7 +121,7 @@ class DjangoSession(models.Model):
 class InventoryAlbum(models.Model):
     title = models.CharField(max_length=255)
     year = models.IntegerField()
-    stock = models.IntegerField()
+    stock_level = models.IntegerField()
     artist = models.ForeignKey('InventoryArtist', models.DO_NOTHING)
 
     class Meta:
