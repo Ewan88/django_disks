@@ -1,5 +1,5 @@
 from django.test import TestCase
-from inventory.models import *
+from .models import *
 
 class AlbumTestCase(TestCase):
     def setUp(self):
