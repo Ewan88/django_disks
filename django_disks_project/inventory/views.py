@@ -6,3 +6,7 @@ from .models import *
 def index(request):
     artists = Artist.objects.all()
     return render(request, "inventory/index.html", locals())
+
+def create(request):
+    artists = Artist.objects.all()
+    return render(request, "inventory/create.html", locals())
